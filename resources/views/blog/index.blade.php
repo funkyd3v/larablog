@@ -36,7 +36,7 @@
                     By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created at {{ date('jS M Y', strtotime($post->updated_at)) }}
                 </span>
                 <p class="text-xl text-gray-800 pb-10 pt-6 leading-8 font-light">
-                    {{ Str::limit($post->description, 40, '...') }}
+                    {{ Str::limit($post->description, 60, '...') }}
                 </p>
                 <a href="/blog/{{ $post->slug }}" class="text-l font-extrabold text-gray-200 bg-blue-600 uppercase px-8 py-4 rounded-3xl">Keep Reading</a>
                 <span class="float-right">
